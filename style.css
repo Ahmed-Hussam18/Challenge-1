@@ -10,16 +10,19 @@
   --Slate-900: hsl(218, 44%, 22%);
 }
 
-html {
+body {
+  height: 100vh;
   background-color: var(--Slate-300);
   font-size: 15px;
   font-weight: 400;
   font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   max-width: 300px;
-  margin: 100px auto;
   background-color: #fff;
   padding: 15px 15px 25px;
   border-radius: 20px;
@@ -38,6 +41,12 @@ html {
   font-size: 20px;
   margin: 15px 0;
   font-weight: 700;
+}
+
+.card .main-content p {
+  color: var(--Slate-500);
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .card .image img {
